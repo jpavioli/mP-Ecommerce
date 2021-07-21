@@ -8,5 +8,5 @@ export const settings = {
     clientKey:"",
     clientSecret:""
   },
-  url: "https://vast-reaches-23927.herokuapp.com/"
+  url: "https://polar-journey-37815.herokuapp.com/"
 }
