@@ -8,5 +8,5 @@ export const settings = {
     clientKey:"",
     clientSecret:""
   },
-  url: "http://localhost:6969/"
+  url: "https://vast-reaches-23927.herokuapp.com/"
 }

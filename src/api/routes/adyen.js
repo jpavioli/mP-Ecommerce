@@ -42,7 +42,7 @@ router.post('/makePayment', (req, res) => {
         paymentMethod: STATE_DATA,
         amount: { currency: "EUR", value: total * 100, },
         reference: orderRef,
-        returnUrl: `https://webhook.site/93371ffa-4147-4848-9bc7-adc595f55435`
+        returnUrl: `https://vast-reaches-23927.herokuapp.com/`
     }
     payementsData.lineItems = []
     req.body.cart.forEach(item=>{

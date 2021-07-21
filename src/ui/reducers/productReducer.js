@@ -29,7 +29,7 @@ export default function manageCart(state = {
         product_id: item.name.product_id,
         order_id: action.data.transaction.id
       }})
-      fetch(`http://localhost:6969/users/`, {
+      fetch(`https://vast-reaches-23927.herokuapp.com/users/`, {
           method: 'POST',
           headers: {
             'content-type':'application/json',
@@ -38,7 +38,7 @@ export default function manageCart(state = {
       })
         .then(res=>res.json())
         .then(data=>{
-          fetch(`http://localhost:6969/orders/`, {
+          fetch(`https://vast-reaches-23927.herokuapp.com/orders/`, {
               method: 'POST',
               headers: {
                 'content-type':'application/json',
@@ -49,7 +49,7 @@ export default function manageCart(state = {
             .then(data=>console.log(data))
             .catch(err=>console.error(err))
           cartObj.forEach(orderProduct=>{
-            fetch(`http://localhost:6969/orderproducts/`, {
+            fetch(`https://vast-reaches-23927.herokuapp.com/orderproducts/`, {
                 method: 'POST',
                 headers: {
                   'content-type':'application/json',
