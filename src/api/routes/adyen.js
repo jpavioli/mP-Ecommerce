@@ -40,7 +40,7 @@ router.post('/makePayment', (req, res) => {
         merchantAccount: config.merchantAccount,
     // STATE_DATA is the paymentMethod field of an object passed from the front end or client app, deserialized from JSON to a data structure.
         paymentMethod: STATE_DATA,
-        amount: { currency: "EUR", value: total * 100, },
+        amount: { currency: "USD", value: total * 100, },
         reference: orderRef,
         returnUrl: `https://polar-journey-37815.herokuapp.com/`
     }

@@ -16,8 +16,8 @@ const Users = sequelize.define('users',{
       primaryKey: true,
       unique: true
     },
-    first_name: {type: STRING},
-    last_name: {type: STRING},
+    firstName: {type: STRING},
+    lastName: {type: STRING},
     address1: {type: STRING},
     address2: {type: STRING},
     city: {type: STRING},
