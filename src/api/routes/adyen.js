@@ -4,8 +4,8 @@ const router = express.Router();
 const {Client, Config, CheckoutAPI} = require('@adyen/api-library');
 
 const config = new Config();
-config.apiKey = 'AQEyhmfxJ43IbBxCw0m/n3Q5qf3VaY9UCJ14XWZE03G/k2NFinJpT1NbYyCJzYdFaECRzTMQwV1bDb7kfNy1WIxIIkxgBw==-32WumCr+lJaQ6prjyzRMFLIFzrfpVyRSxU7bWio/uew=-n#2KHpD*ZXb]8@U@';
-config.merchantAccount = 'AdyenRecruitment_NY2';
+config.apiKey = 'ADYEN_API_KEY';
+config.merchantAccount = 'ADYEN_MERCHANT_ACCOUNT';
 const client = new Client({ config });
 client.setEnvironment("TEST");
 const checkout = new CheckoutAPI(client);
@@ -31,8 +31,8 @@ router.post('/makePayment', (req, res) => {
     const {Client, Config, CheckoutAPI} = require('@adyen/api-library');
     const config = new Config();
     // Set your X-API-KEY with the API key from the Customer Area.
-    config.apiKey = 'AQEyhmfxJ43IbBxCw0m/n3Q5qf3VaY9UCJ14XWZE03G/k2NFinJpT1NbYyCJzYdFaECRzTMQwV1bDb7kfNy1WIxIIkxgBw==-32WumCr+lJaQ6prjyzRMFLIFzrfpVyRSxU7bWio/uew=-n#2KHpD*ZXb]8@U@';
-    config.merchantAccount = 'AdyenRecruitment_NY2';
+    config.apiKey = 'ADYEN_API_KEY';
+    config.merchantAccount = 'ADYEN_MERCHANT_ACCOUNT';
     const client = new Client({ config });
     client.setEnvironment("TEST");
     const checkout = new CheckoutAPI(client);
