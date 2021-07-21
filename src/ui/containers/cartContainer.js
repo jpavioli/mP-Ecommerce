@@ -8,7 +8,7 @@ import '@adyen/adyen-web/dist/adyen.css';
 
 class CartContainer extends React.Component {
 
-  URL = (route) => {return `https://vast-reaches-23927.herokuapp.com/adyen/${route}`}
+  URL = (route) => {return `https://polar-journey-37815.herokuapp.com/adyen/${route}`}
 
   initiateCheckout = () => {
     const total = this.props.cart.reduce((a, b) => a + b.name.cost, 0)
