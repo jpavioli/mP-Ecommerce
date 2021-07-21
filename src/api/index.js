@@ -25,5 +25,5 @@ app.get("/", (req, res) => {
 app.use('/adyen', require('./routes/adyen'));
 
 //Listener Port 6969
-const port = app.get('port') || 6969
+const port = process.env.PORT || 6969
 app.listen(port,() => {console.log(`I am listening at ${port}`)})
