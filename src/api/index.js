@@ -15,7 +15,7 @@ app.use('/users', require('./routes/users'));
 app.use('/orders', require('./routes/orders'));
 app.use('/orderproducts', require('./routes/orderProducts'))
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname,"../../", 'build')));
 
 app.get("/", (req, res) => {
  res.sendFile(path.join(__dirname,"../../", "build", "index.html"));
