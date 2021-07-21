@@ -21,11 +21,7 @@ class Checkout extends React.Component {
     if (this.props.user) {
       const configuration = {
          paymentMethodsResponse: this.props.paymentMethod, // The `/paymentMethods` response from the server.
-<<<<<<< HEAD
          clientKey: "test_QE62X2LEK5CJRALERBE3GQHTOIHFPXF5", // Web Drop-in versions before 3.10.1 use originKey instead of clientKey.
-=======
-         clientKey: "ADYEN CLIENT KEY", // Web Drop-in versions before 3.10.1 use originKey instead of clientKey.
->>>>>>> d43d5a92367ad1e026ab31fa95ebd10d156b72d1
          locale: "en-US",
          environment: "test",
          onSubmit: (state, dropin) => {
